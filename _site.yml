@@ -1,0 +1,15 @@
+name: "."
+title: "Demo Site"
+description: |
+  Summer 2021 Demo R Site
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Alyssa"
+      href: alyssa.html
+theme: theme.css
+output: distill::distill_article
