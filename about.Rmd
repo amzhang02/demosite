@@ -1,0 +1,30 @@
+---
+title: "About this site"
+description: |
+  This is a demo website for Summer 2021. We can either use this site as a template for the actual final product or we can just keep this as reference code. Here's a graph from the Mario Kart Records TidyTuesday data.
+output:
+  distill::distill_article:
+    code_folding: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+library(tidyverse)
+library(knitr)
+library(graphics)
+drivers <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-05-25/drivers.csv')
+```
+
+This is a graph of the number of world records each Mario Kart 64 player set over the years since its release in 1996. 
+
+```{r, include=TRUE}
+australian <- drivers %>%
+  filter(nation == "Australia")
+
+driver_numrecords <- ggplot(australian, aes(x = year, y = records, group = player, col = player)) +
+  geom_line() + geom_point()
+
+driver_numrecords
+```
+
