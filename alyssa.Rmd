@@ -1,0 +1,15 @@
+---
+title: "Alyssa Zhang"
+image: "alyssa.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/alyssa-zhang-13697a187/"
+  - label: GitHub
+    url: "https://github.com/amzhang02"
+  - label: Email
+    url: "mailto:amzhang02@gmail.com"
+output:
+  postcards::jolla
+---
+ 
+I am a rising sophomore at Swarthmore College. Currently, I am a summer research assistant with Prof. Amanda Luby. I love running track & field, playing with dogs (yes, anyone's dog) and watching Formula 1!
