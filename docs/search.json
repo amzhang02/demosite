@@ -6,14 +6,14 @@
       "description": "This is a demo website for Summer 2021. We can either use this site as a template for the actual final product or we can just keep this as reference code. Here's a graph from the Mario Kart Records TidyTuesday data.\n",
       "author": [],
       "contents": "\nThis is a graph of the number of world records each Mario Kart 64 player set over the years since its release in 1996.\n\n\nShow code\n\naustralian <- drivers %>%\n  filter(nation == \"Australia\")\n\ndriver_numrecords <- ggplot(australian, aes(x = year, y = records, group = player, col = player)) +\n  geom_line() + geom_point()\n\ndriver_numrecords\n\n\n\n\n\n\n\n",
-      "last_modified": "2021-06-24T00:37:53-07:00"
+      "last_modified": "2021-06-24T11:04:33-07:00"
     },
     {
       "path": "alyssa.html",
       "title": "Alyssa Zhang",
       "author": [],
-      "contents": "\n\n          \n          \n          Demo Site\n          \n          \n          Home\n          About\n          Logistic Regression\n          Alyssa\n          ☰\n          \n          \n      \n        \n          \n            Alyssa Zhang\n          \n          \n            \n              I am a rising sophomore at Swarthmore College. Currently, I am a summer research assistant with Prof. Amanda Luby. I love running track & field, playing with dogs (yes, anyone’s dog) and watching Formula 1!\n            \n            \n              I am a rising sophomore at Swarthmore College. Currently, I am a summer research assistant with Prof. Amanda Luby. I love running track & field, playing with dogs (yes, anyone’s dog) and watching Formula 1!\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-06-24T00:37:54-07:00"
+      "contents": "\n\n          \n          \n          Demo Site\n          \n          \n          Home\n          About\n          Logistic Regression\n          Helpful Links\n          Alyssa\n          ☰\n          \n          \n      \n        \n          \n            Alyssa Zhang\n          \n          \n            \n              I am a rising sophomore at Swarthmore College. Currently, I am a summer research assistant with Prof. Amanda Luby. I love running track & field, playing with dogs (yes, anyone’s dog) and watching Formula 1!\n            \n            \n              I am a rising sophomore at Swarthmore College. Currently, I am a summer research assistant with Prof. Amanda Luby. I love running track & field, playing with dogs (yes, anyone’s dog) and watching Formula 1!\n            \n          \n\n          \n            \n              \n                  \n                    \n                      LinkedIn\n                    \n                  \n                \n                                \n                  \n                    \n                      GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                      Email\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                    LinkedIn\n                  \n                \n                                \n                  \n                    GitHub\n                  \n                \n                                \n                  \n                    Email\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-06-24T11:04:34-07:00"
     },
     {
       "path": "index.html",
@@ -21,7 +21,15 @@
       "description": "Welcome to the demo website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\nxkcd never fails to deliver high quality comics.\n\n\n\n\n\n\n",
-      "last_modified": "2021-06-24T00:37:55-07:00"
+      "last_modified": "2021-06-24T11:04:37-07:00"
+    },
+    {
+      "path": "links.html",
+      "title": "Helpful Links",
+      "description": "These are most of the resources I used to help me with building this website. In addition to all of these, Stack Overflow is a really helpful website and I found a good number of the answers to my questions on there.",
+      "author": [],
+      "contents": "\nText formatting syntax\nMarkdown Basics\nR Markdown: The Definitive Guide\n\nDistill package guides\nDistill for R Markdown\nPostcards & Distill\n\nRstudio to Github help\nGit & Github “Textbook”\nRemove file from repo\n\n\n\n\n",
+      "last_modified": "2021-06-24T11:04:38-07:00"
     },
     {
       "path": "logistic.html",
@@ -29,7 +37,7 @@
       "description": "This is the coolest thing I learned last week: logsitic regression and hmm... looks similar to the IRT modeling equation (SUS!!). This is also for me to practice inserting equations into text like you would in LaTeX and doing fun things with the text.",
       "author": [],
       "contents": "\nLogistic regression is a type of generalized linear model (GLM) for response variables where MLR doesn’t do well at all as in data that looks like this.\n\n\n\nFigure 1: Logistic regression example from SPSS Tutorials\n\n\n\nGLMs have a two-stage modeling process:\nModel the response variable using a probability distribution\nModel the parameter of the distribution by using a collection of predictors and special form regression\nThe outcome should be a 2-level categorical variable Yi that takes the value 1 with probability pi and value 0 with probability 1-pi. The predictor variables are written as xk,i which is the value of variable k for observation i. For data that looks like the scatterplot above, we want to choose a transformation that makes sense a.k.a the logit transformation:\n\\(logit(p_i)=log_e(\\frac{p_i}{1-p_i})\\)\nThe reason for this is because a linear model \\(y=b_0 + b_1x\\), although easier to understand, does not accurately represent the relationship between \\(x\\) and \\(Y_i\\). We need a function of \\(p_i\\) that can be translated into \\(y=b_0 + b_1x\\) from the logit model and vice versa. Here is a graphic comparison of plotting \\(p(Y=1)\\) vs \\(x\\):\n\n\n\nFigure 2: Graphic comparison between linear and logit models\n\n\n\nHere’s the algebra for getting the equation of the logistic function:\n\\(f(p_i) = b_0 + b_1x\\)\n\\(log(\\frac{p_i}{1-p_i}) = b_0 + b_1x\\)\n\\(\\frac{p_i}{1-p_i} = e^{b_0 + b_1x}\\)\n\\(\\frac{1-p_i}{p_i} = e^{-(b_0 + b_1x)}\\)\n\\(\\frac{1}{p_i} - 1 = e^{-(b_0 + b_1x)}\\)\n\\(\\frac{1}{p_i} = e^{-(b_0 + b_1x)} + 1\\)\n\\(p_i = \\frac{1}{e^{-(b_0 + b_1x)} + 1}\\)\n\n\n\n",
-      "last_modified": "2021-06-24T00:37:57-07:00"
+      "last_modified": "2021-06-24T11:04:40-07:00"
     }
   ],
   "collections": []

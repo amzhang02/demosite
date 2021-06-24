@@ -1,0 +1,27 @@
+---
+title: "Helpful Links"
+description: |
+  These are most of the resources I used to help me with building this website. In addition to all of these, Stack Overflow is a really helpful website and I found a good number of the answers to my questions on there.
+---
+
+- **Text formatting syntax**
+    * [Markdown Basics][RmdB]
+    * [R Markdown: The Definitive Guide][RmdG]
+
+- **Distill package guides**
+    * [Distill for R Markdown][Distill]
+    * [Postcards & Distill][Pcards]
+
+- **Rstudio to Github help**
+    * [Git & Github "Textbook"][HappyGit]
+    * [Remove file from repo][Remove]
+
+
+
+[RmdB]: https://rmarkdown.rstudio.com/authoring_basics.html "Markdown Basics"
+[RmdG]: https://bookdown.org/yihui/rmarkdown/markdown-syntax.html "R Markdown: The Definitive Guide"
+[Distill]: https://rstudio.github.io/distill/#creating-an-article "Distill for R Markdown"
+[Pcards]: https://alison.rbind.io/blog/2020-12-postcards-distill/ "Postcards & Distill"
+[HappyGit]: https://happygitwithr.com/existing-github-last.html "Happy Git & Github for the useR"
+[Remove]: https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-a-git-repository/2047477 "Stack Overflow remove file"
+
