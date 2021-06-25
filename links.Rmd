@@ -15,6 +15,7 @@ description: |
 - **Rstudio to Github help**
     * [Git & Github "Textbook"][HappyGit]
     * [Remove file from repo][Remove]
+    * [.gitignore & how to exclude files][gitignore]
 
 
 
@@ -24,4 +25,5 @@ description: |
 [Pcards]: https://alison.rbind.io/blog/2020-12-postcards-distill/ "Postcards & Distill"
 [HappyGit]: https://happygitwithr.com/existing-github-last.html "Happy Git & Github for the useR"
 [Remove]: https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-a-git-repository/2047477 "Stack Overflow remove file"
+[gitignore]: https://github.com/github/gitignore/blob/master/R.gitignore "Github file for .gitignore"
 
