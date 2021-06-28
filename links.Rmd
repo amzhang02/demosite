@@ -14,6 +14,7 @@ description: |
 
 - **Rstudio to Github help**
     * [Git & Github "Textbook"][HappyGit]
+    * [How to upload files to git (SIMPLE VERSION)][SimpleGit]
     * [Remove file from repo][Remove]
     * [.gitignore & how to exclude files][gitignore]
 
@@ -26,4 +27,5 @@ description: |
 [HappyGit]: https://happygitwithr.com/existing-github-last.html "Happy Git & Github for the useR"
 [Remove]: https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-a-git-repository/2047477 "Stack Overflow remove file"
 [gitignore]: https://github.com/github/gitignore/blob/master/R.gitignore "Github file for .gitignore"
+[SimpleGit]: https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line "Upload files via shell"
 
